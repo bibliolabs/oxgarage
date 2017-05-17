@@ -106,9 +106,15 @@
 	<version>9.4</version>
     </dependency>
     <dependency>
-	<groupId>com.thaiopensource</groupId>
-	<artifactId>trang</artifactId>
-	<version>20091111</version>
+	  <groupId>com.thaiopensource</groupId>
+	  <artifactId>trang</artifactId>
+	  <version>20091111</version>
+      <exclusions>
+        <exclusion>
+          <groupId>net.sf.saxon</groupId>
+          <artifactId>saxon</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 </project>
